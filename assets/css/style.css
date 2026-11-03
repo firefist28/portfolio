@@ -429,3 +429,5 @@ a.work:hover { border-color: var(--green); text-decoration: none; }
   cursor: pointer; text-decoration: underline; text-underline-offset: 3px;
 }
 .more-toggle:hover { text-decoration-thickness: 2px; }
+.skill-group.plain.wide { background: var(--surface); border-color: var(--line); }
+.skill-group.plain.wide .tags li { background: var(--green-tint); }
