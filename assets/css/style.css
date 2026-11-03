@@ -419,3 +419,4 @@ a.work:hover { border-color: var(--green); text-decoration: none; }
 
 .skill-group.wide .tags li { background: var(--surface); }
 .timeline ul.tags { padding-left: 0; }
+.portrait:has(img) { padding: 0; background: var(--surface); overflow: hidden; }

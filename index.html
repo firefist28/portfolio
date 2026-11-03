@@ -8,6 +8,7 @@
 <meta property="og:title" content="Vikas Rawat | Senior Backend Engineer, Payments">
 <meta property="og:description" content="Senior Backend Engineer in Dubai building real-time and cross-border payment systems with Java, Spring Boot, Kafka and ISO 20022.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/vikas-square.jpg">
 <meta name="theme-color" content="#1e5a48">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <script>
@@ -40,7 +41,7 @@
   <div class="wrap">
     <p class="where"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Dubai, UAE</p>
     <h1>I build the systems that move money across borders.</h1>
-    <p class="lede">Senior Backend Engineer working in Java, Spring Boot and Kafka. Real-time and cross-border payments, ISO&nbsp;20022 messaging and reconciliation, with 8+ years of full-stack work behind it.</p>
+    <p class="lede">Senior Backend Engineer with 9+ years in software, 5+ of them building Java systems for HSBC, Citi and now Al Fardan Exchange. I work on ISO&nbsp;20022 messaging and the AANI&ndash;UPI instant-payments link for the India&ndash;UAE corridor.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="assets/Vikas_Rawat_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download CV</a>
       <a class="btn btn-ghost" href="projects.html">See my projects</a>
@@ -50,10 +51,10 @@
 
 <section class="section"><div class="wrap">
   <dl class="facts">
-    <div><dt>8+ years</dt><dd>building Java and full-stack systems</dd></div>
-    <div><dt>100+</dt><dd>batch jobs moved from Talend to Spring Batch</dd></div>
-    <div><dt>5</dt><dd>companies, from automotive to banking</dd></div>
-    <div><dt>ISO 20022</dt><dd>pacs and camt messaging in production</dd></div>
+    <div><dt>9+ years</dt><dd>in software engineering, 5+ in banking and payments</dd></div>
+    <div><dt>3 banks</dt><dd>HSBC, Citi and Al Fardan Exchange</dd></div>
+    <div><dt>~100</dt><dd>ETL jobs migrated from Talend to Spring Batch</dd></div>
+    <div><dt>4</dt><dd>ISO 20022 message types in production: pacs.008, camt.052, 053, 054</dd></div>
   </dl>
 </div></section>
 
@@ -62,23 +63,21 @@
     <h2>The life of a payment, and where I work on it</h2>
   </div>
   <ol class="lifecycle">
-    <li><span class="step">1</span><h3>Initiate</h3><p>APIs that accept a transfer and build a <code>pacs.008</code> credit transfer.</p></li>
-    <li><span class="step">2</span><h3>Validate</h3><p>Schema, business-rule and compliance checks before anything leaves.</p></li>
-    <li><span class="step">3</span><h3>Route</h3><p>Kafka events carry the payment to the right local or partner bank.</p></li>
-    <li><span class="step">4</span><h3>Settle</h3><p>Status tracking across the transaction lifecycle, with retries that stay idempotent.</p></li>
-    <li><span class="step">5</span><h3>Reconcile</h3><p><code>camt</code> statements matched against the ledger so every dirham is accounted for.</p></li>
+    <li><span class="step">1</span><h3>Receive</h3><p>Inbound and outbound remittances arrive over AANI and the UPI IRP channel.</p></li>
+    <li><span class="step">2</span><h3>Parse</h3><p>Handlers read <code>pacs.008</code> and <code>camt</code> messages and map XML to JSON.</p></li>
+    <li><span class="step">3</span><h3>Validate</h3><p>Schema and business-rule checks, with every parsed and unparsed message logged.</p></li>
+    <li><span class="step">4</span><h3>Process</h3><p>Kafka events drive each payment through its lifecycle in real time.</p></li>
+    <li><span class="step">5</span><h3>Reconcile</h3><p><code>camt.053</code> statements matched against transactions, with a full audit trail.</p></li>
   </ol>
 </div></section>
 
 <section class="section"><div class="wrap split">
-  <div class="portrait">
-    <!-- Replace this block with: <img src="assets/img/vikas.jpg" alt="Vikas Rawat"> -->
-    <div><strong>VR</strong>Photo coming soon</div>
-  </div>
+  <div class="portrait"><img src="assets/img/vikas.jpg" alt="Portrait of Vikas Rawat" width="800" height="1000" loading="lazy"></div>
   <div>
     <h2>About me</h2>
-    <p>I'm a backend engineer at Al Fardan Exchange in Dubai, where I work on AANI instant payments and cross-border transfers with several partner banks. Most of my days are spent on event-driven services, message formats that banks agree on, and making sure nothing is lost between two ledgers.</p>
-    <p>Before payments I worked across very different domains: banking platforms through Synechron for HSBC, enterprise work at LTIMindtree and Infosys, and a connected-car app at Volkswagen where I shipped both Android and web features. That mix taught me to care about the person on the other end, whether that's a driver or an operations team chasing a missing transfer.</p>
+    <p>I'm a backend engineer at Al Fardan Exchange in Dubai. I built the integration between the UAE's AANI instant-payments platform and India's UPI from scratch, co-designed its architecture, and mentor the engineers on the team.</p>
+    <p>Before that I spent nearly three years at LTIMindtree on Citi's ASPEN trading platform, working on Kafka-based position management and moving around 100 ETL jobs off Talend. Earlier I worked on HSBC's payment services through Synechron, connected-vehicle microservices for Volkswagen, and started my career at Infosys.</p>
+    <p>I care about systems that don't lose data between two ledgers, and about code that the next engineer can read.</p>
     <p><a href="experience.html">Read my full experience</a></p>
   </div>
 </div></section>
@@ -90,19 +89,19 @@
   </div>
   <div class="work-list">
     <a class="work" href="projects.html#aani">
-      <div><span class="kind">Payments</span><h3>AANI local and cross-border integration</h3>
-      <p>A Kafka-based distributed system for instant domestic payments and international transfers with multiple bank partners.</p></div>
-      <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Kafka</li><li>ISO 20022</li></ul>
+      <div><span class="kind">Payments, Al Fardan Exchange</span><h3>AANI&ndash;UPI instant payments, India to UAE</h3>
+      <p>A greenfield integration for real-time inbound and outbound remittances, with ISO 20022 message handling and Kafka-driven processing.</p></div>
+      <ul class="tags"><li>Java 21</li><li>Spring Boot</li><li>Kafka</li><li>ISO 20022</li><li>AWS</li></ul>
     </a>
-    <a class="work" href="projects.html#batch">
-      <div><span class="kind">Data platform</span><h3>Talend to Spring Batch migration</h3>
-      <p>Moved more than 100 production jobs from Talend to Spring Batch, scheduled and monitored through AutoSys.</p></div>
-      <ul class="tags"><li>Spring Batch</li><li>AutoSys</li><li>SQL</li></ul>
+    <a class="work" href="projects.html#aspen">
+      <div><span class="kind">Trading, Citi via LTIMindtree</span><h3>ASPEN position management and Spring Batch migration</h3>
+      <p>Real-time position updates over Kafka for trading desks, and around 100 ETL jobs moved from Talend to Spring Batch with Autosys.</p></div>
+      <ul class="tags"><li>Kafka</li><li>Spring Batch</li><li>Autosys</li><li>React</li></ul>
     </a>
     <a class="work" href="projects.html#move">
-      <div><span class="kind">Automotive</span><h3>Volkswagen MOVE app</h3>
-      <p>Full-stack Android and web development on Volkswagen's MOVE app.</p></div>
-      <ul class="tags"><li>Android</li><li>Java</li><li>Web</li></ul>
+      <div><span class="kind">Automotive, Volkswagen</span><h3>Move by Volkswagen</h3>
+      <p>Android features and Spring Boot microservices on Azure for a connected-vehicle mobility platform.</p></div>
+      <ul class="tags"><li>Android</li><li>Spring Boot</li><li>Azure</li><li>Azure DevOps</li></ul>
     </a>
   </div>
 </div></section>
@@ -110,7 +109,7 @@
   <div class="closing">
     <div>
       <h2>Hiring for backend or payments?</h2>
-      <p>I'm open to backend and fintech engineering roles, including relocation to Europe.</p>
+      <p>Open to senior backend roles in Europe, the UK, Ireland and Canada. Notice period: 2 months.</p>
     </div>
     <div class="btn-row" style="margin-top:0">
       <a class="btn btn-primary" href="assets/Vikas_Rawat_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download CV</a>
@@ -123,7 +122,7 @@
   <div class="wrap">
     <span>&copy; <span data-year>2026</span> Vikas Arjunsingh Rawat. Dubai, UAE.</span>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+      <a href="https://www.linkedin.com/in/vikas-rawat-058a2512a" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
       <a href="https://github.com/firefist28" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
       <a href="mailto:vikasalex1996@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg></a>
       <a href="assets/Vikas_Rawat_CV.pdf" download aria-label="Download CV"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></a>
