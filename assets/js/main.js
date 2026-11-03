@@ -100,3 +100,17 @@
     }
   }
 })();
+
+// "Read more" toggles. Without JS, all content stays visible.
+document.querySelectorAll(".more-toggle").forEach(function (btn) {
+  var panel = document.getElementById(btn.getAttribute("aria-controls"));
+  if (!panel) return;
+  panel.hidden = true;
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var open = panel.hidden;
+    panel.hidden = !open;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "Show less" : "Read more";
+  });
+});

@@ -422,3 +422,10 @@ a.work:hover { border-color: var(--green); text-decoration: none; }
 .portrait:has(img) { padding: 0; background: var(--surface); overflow: hidden; }
 .ai-list { padding-left: 1.2em; margin: 0 0 18px; max-width: var(--measure); }
 .ai-list li { margin-bottom: 6px; }
+
+.more-toggle {
+  font-family: var(--font-display); font-weight: 600; font-size: 1rem;
+  color: var(--green); background: none; border: 0; padding: 4px 0;
+  cursor: pointer; text-decoration: underline; text-underline-offset: 3px;
+}
+.more-toggle:hover { text-decoration-thickness: 2px; }
