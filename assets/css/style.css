@@ -420,3 +420,5 @@ a.work:hover { border-color: var(--green); text-decoration: none; }
 .skill-group.wide .tags li { background: var(--surface); }
 .timeline ul.tags { padding-left: 0; }
 .portrait:has(img) { padding: 0; background: var(--surface); overflow: hidden; }
+.ai-list { padding-left: 1.2em; margin: 0 0 18px; max-width: var(--measure); }
+.ai-list li { margin-bottom: 6px; }
